@@ -1,0 +1,48 @@
+.advant {
+    min-height: 864px;
+    background: $bgColGrey;
+
+    &__content {
+        display: flex;
+    }
+    &__wrapper {
+        padding: 165px 130px 0 98px;
+    }
+    &__title {
+        font-size: 29px;
+        font-family: "Good Dog Cool";
+        color: $textColGreen;
+    }
+    &__descr {
+        margin-top: 40px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 29.17px;
+    }
+    &__items {
+        background-color: rgba(78, 83, 66, 0.8);
+        color: #eaeaea;
+    }
+    &__items-cont {
+        width: 1110px;
+        padding: 96px 0;
+    }
+    &__item {
+        width: 307px;
+    }
+    &__item-title {
+        font-family: "Good Dog Cool";
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 33.24px;
+        margin-top: 25px;
+    }
+    &__item-descr {
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-top: 33px;
+    }
+}

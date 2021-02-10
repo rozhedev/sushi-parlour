@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/slick.css">
+    <title>Sushi Parlour</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    @@include('_header.html')
     <section class="promo" id="up">
+        @@include('_header.html')
         <div class="container">
+            <div class="promo__content">
+                <a href="#"><img src="img/promo/logo.svg" alt="logo" class="logo"></a>
+                <h2 class="promo__suptitle">NEW OPENING</h2>
+                <h1 class="promo__title">23RD SEPT </h1>
+                <button class="promo__btn">LEARN MORE</button>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Advantages -->
+
+    <section class="advant">
+        <div class="advant__content">
+            <div class="advant__wrapper">
+                <div class="advant__title">What do we actually cook?</div>
+                <div class="advant__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolorem magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+            </div>
+            <img src="../img/promo/right_dish.png" alt="right_dish" class="advant__img">
+        </div>
+        <div class="advant__items">
+            <div class="row advant__items-cont">
+                <div class="column advant__item">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <div class="advant__item-title">New tastes</div>
+                    <div class="advant__item-descr">Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne 
+                        ullamco laboris nisi ut aliqolore.</div>
+                </div>
+                <div class="column advant__item">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <div class="advant__item-title">New dishes cooking</div>
+                    <div class="advant__item-descr">Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne 
+                        ullamco laboris nisi ut aliqolore.</div>
+                </div>
+                <div class="column advant__item">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <img src="img/decor/brush.png" alt="brush" class="advant__decor">
+                    <div class="advant__item-title">New restaurant</div>
+                    <div class="advant__item-descr">Lorem ipsum dolor sit amet, consecte
+                        sectetur adipisicing elit, tation omne 
+                        ullamco laboris nisi ut aliqolore.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     @@include('_footer.html')
 
     <script src="js/script.min.js"></script>

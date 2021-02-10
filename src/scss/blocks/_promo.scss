@@ -1,0 +1,33 @@
+.promo {
+    background: url("../img/promo/bg.jpg") center/cover no-repeat;
+    min-height: 1000px;
+    padding: 62px 0 242px 0;
+    position: relative;
+    color: $textColGreen;
+
+    &__content {
+        position: absolute;
+        top: 166px;
+        left: 901px;
+    }
+    &__suptitle {
+        margin-top: 112px;
+        font-size: 57px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: #9baf6d;
+        font-size: 78px;
+        font-weight: 700;
+    }
+    &__btn {
+        margin-top: 140px;
+        width: 388px;
+        height: 93px;
+        background-color: rgba(93, 105, 66, 0.5);
+        color: $textColGreen;
+        font-size: 49px;
+        text-transform: uppercase;
+    }
+}

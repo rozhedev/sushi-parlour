@@ -1,13 +1,30 @@
-// body {
-//     font-family: "Museo Sans Cyrl";
-// }
+.header {
+    width: 100%;
+    height: 88px;
 
-// .header {
-    
-// }
+    .menu {
+        width: 740px;
+        margin-left: 636px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            opacity: 0.78;
+            color: #afc67b;
+            font-size: 35px;
+            font-weight: 400;
+            text-transform: uppercase;
+            transition: .5s all;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
 
 // @media (max-width: 426px) {
 //     .header {
-        
+
 //     }
 // }
