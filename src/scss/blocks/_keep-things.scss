@@ -1,0 +1,28 @@
+.keep {
+    background-color: $bgColGrey;
+    text-align: center;
+
+    &--green-bg {
+        background-color: rgba(69, 73, 59, 0.8);
+        height: 400px;
+        padding: 114px 95px;
+    }
+    &__wrapper {
+        width: 720px;
+        margin: 0 auto;
+    }
+    &__title {
+        color: $textColGreen;
+        font-family: "Good Dog Cool";
+        font-size: 42px;
+    }
+    &__descr {
+        color: #dcdcdb;
+        font-family: "Myriad Pro";
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    &__decor {
+        margin-top: 45px;
+    }
+}
