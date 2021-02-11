@@ -1,0 +1,79 @@
+.bring {
+    background-color: $bgColGrey;
+    min-height: 1206px;
+    padding: 88px 0;
+
+    &__wrapper {
+        width: 1080px;
+        margin: 0 auto;
+        background-color: $bgColGreen;
+        padding-top: 65px;
+    }
+    &__title {
+        line-height: 60.59px;
+        font-size: 46px;
+    }
+    &__subtitle {
+        font-size: 42px;
+        font-weight: 300;
+        line-height: 62.81px;
+    }
+    &__content {
+        margin-top: 65px;
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        gap: 0;
+    }
+    &__img {
+        &--order3 {
+            order: 3;
+        }
+        &--order5 {
+            order: 5;
+        }
+        &--order6 {
+            order: 6;
+        }
+        &--order8 {
+            order: 8;
+        }
+    }
+    &__descr {
+        width: 270px;
+        height: 275px;
+        background-color: $bgColGreen;
+        opacity: 0.8;
+        text-align: center;
+        padding: 65px 60px;
+
+        &--order2 {
+            order: 2;
+        }
+        &--order4 {
+            order: 4;
+        }
+        &--order7 {
+            order: 7;
+        }
+        &--order9 {
+            order: 9;
+        }
+
+        &-title {
+            color: $textColGreen;
+            font-family: "Good Dog Cool";
+            font-size: 29px;
+        }
+        &-text {
+            color: #e8e8e8;
+            font-family: "Myriad Pro";
+            font-size: 17px;
+            margin: 20px 0;
+        }
+        &-price {
+            color: #e8e8e8;
+            font-family: "Good Dog Cool";
+            font-size: 25px;
+        }
+    }
+}

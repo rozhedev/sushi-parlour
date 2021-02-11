@@ -14,3 +14,15 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.title {
+    color: $textColGreen;
+    font-family: "Good Dog Cool";
+    font-weight: 400;
+    text-align: center;
+}
+
+.subtitle {
+    color: $textColGrey;
+    text-align: center;
+}
