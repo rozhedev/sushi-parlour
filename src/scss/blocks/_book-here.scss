@@ -1,0 +1,51 @@
+.book {
+    min-height: 450px;
+    background-color: $bgColGrey;
+    padding: 45px 0 70px;
+
+    &__title {
+        color: #ffffff;
+        font-size: 77px;
+    }
+    &__content {
+        margin-top: 35px;
+    }
+}
+
+.book-form {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    column-gap: 200px;
+    color: #ffffff;
+    font-size: 17px;
+
+    &--trform40 {
+        transform: translateY(40px);
+    }
+    &__label {
+        font-weight: 700;
+    }
+    &__inp {
+        padding: 3px 10px;
+        color: #ffffff;
+        font-size: 17px;
+        background: none;
+        width: 237px;
+        height: 33px;
+        border-radius: 8px;
+        border: 2px solid #ffffff;
+    }
+    &__btn {
+        transform: translateY(95px);
+        width: 237px;
+        height: 32px;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        background: none;
+        border: 2px solid #ffffff;
+        border-radius: 8px;
+        text-transform: uppercase;
+        grid-column-start: 2;
+    }
+}

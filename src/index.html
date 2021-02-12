@@ -236,6 +236,40 @@
         </div>
     </section>
 
+    <!-- Book here -->
+
+    <section class="book">
+        <div class="container">
+            <h2 class="title book__title">Book here</h2>
+            <div class="book__content">
+                <form action="" class="book-form">
+                    <label for="" class="book-form__label">How many people?</label>
+                    <label for="" class="book-form__label">When is your date?</label>
+                    <label for="" class="book-form__label">Time</label>
+
+                    <select type="text" name="num-people" id="" class="book-form__inp">
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="more">More</option>
+                    </select>
+                    <input type="date" name="date" id="" value="2021-02-12" class="book-form__inp">
+                    <input type="time" name="" id="" value="10:00" class="book-form__inp">
+
+                    <label for="" class="book-form__label book-form--trform40">Name</label>
+                    <label for="" class="book-form__label book-form--trform40">Email</label>
+                    <label for="" class="book-form__label book-form--trform40">Phone</label>
+
+                    <input type="text" name="name" id="" placeholder="Full name" class="book-form__inp book-form--trform40">
+                    <input type="email" name="email" id="" placeholder="Your email" class="book-form__inp book-form--trform40">
+                    <input type="tel" name="phome" id="" placeholder="Your phone" class="book-form__inp book-form--trform40">
+                    <button class="book-form__btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     @@include('_footer.html')
 
     <script src="js/script.min.js"></script>
