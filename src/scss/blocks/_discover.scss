@@ -1,4 +1,60 @@
 .discover {
     height: 1730px;
     background: url("../img/discover/bg.jpg") center/cover no-repeat;
+
+    &__wrapper {
+        transform: translateY(238px);
+        height: 603px;
+        background-color: #3e4136;
+        opacity: 0.99;
+        padding: 45px 0 55px;
+        color: #e7e7e7;
+    }
+    &__title {
+        font-family: "Good Dog Cool";
+        font-size: 71px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 46px;
+        text-transform: uppercase;
+    }
+    &__content {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        column-gap: 300px;
+    }
+    &__item {
+        display: flex;
+        margin-top: 50px;
+        &--mt40 {
+            margin-top: 40px;
+        }
+        &-img {
+            width: 81px;
+            height: 81px;
+            background-color: rgba(231, 231, 231, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-content {
+            margin-left: 10px;
+            max-width: 350px;
+        }
+        &-text {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        &-title {
+            font-family: "Good Dog Cool";
+            font-size: 25px;
+        }
+        &-price {
+            font-size: 21px;
+            font-family: "Good Dog"; 
+        }
+    }
 }
