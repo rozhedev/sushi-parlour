@@ -1,0 +1,75 @@
+.new-menu {
+    min-height: 865px;
+    background: url("../img/discover/bottom_bg.jpg") center/cover no-repeat;
+    background-color: $bgColGrey;
+
+    &__wrapper-bg {
+        min-height: 820px;
+        background-color: $bgColGrey;
+        transform: translateY(865px);
+    }
+    &__wrapper {
+        background-color: rgba(62, 65, 54, 0.8);
+        padding: 45px 0 120px;
+    }
+    &__title {
+        font-size: 77px;
+    }
+    &__subtitle {
+        color: #e7e7e7;
+        font-size: 48px;
+    }
+    &__content {
+        margin-top: 50px;
+    }
+    &__inner {
+        padding: 25px 20px;
+    }
+    &__item {
+        width: 339px;
+        min-height: 500px;
+        background-color: #e7e7e7;
+
+        &-date {
+            color: #555555;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.05px;
+        }
+        &-title {
+            margin-top: 20px;
+            color: #4f4e4e;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &-descr {
+            color: #4f4e4e;
+            font-size: 17px;
+            margin-top: 5px;
+        }
+        &-btn {
+            margin-top: 25px;
+            color: #555555;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.05px;
+            width: 98px;
+            transition: .5s all;
+
+            &::after {
+                content: "";
+                display: none;
+                width: 98px;
+                height: 7px;
+                background-color: #afc67b;
+                margin-top: 5px;    
+            }
+            &:hover {
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+}
