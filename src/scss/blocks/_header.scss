@@ -14,14 +14,15 @@
             font-size: 35px;
             font-weight: 400;
             text-transform: uppercase;
-            transition: .5s all;
-
-            &:hover {
-                text-decoration: underline;
+            @include linkAnimation();
+            &::after {
+                height: 5px;
             }
         }
     }
 }
+
+// Сделай красивые анимации в макете. Здесь сделай анимацию с помощью after (увеличение подчеркивания по ширине).
 
 // @media (max-width: 426px) {
 //     .header {

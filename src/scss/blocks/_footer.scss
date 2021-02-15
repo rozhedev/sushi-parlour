@@ -40,6 +40,10 @@
         flex-direction: column;
         &-item {
             margin-top: 5px;
+            transition: .5s all;
+            &:hover {
+                text-decoration: underline;
+            }
             
         }
         &-item--thin {

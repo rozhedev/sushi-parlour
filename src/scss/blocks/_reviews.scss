@@ -10,7 +10,7 @@
         max-width: 685px;
     }
     &__decor {
-        color: #afc67b;
+        color: $textColGreen;
         font-family: "Good Dog Cool";
         font-size: 83px;
     }
@@ -40,6 +40,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: .5s all;
+
+            &:hover {
+                background-color: #aac078;
+            }
         }
     }
 }

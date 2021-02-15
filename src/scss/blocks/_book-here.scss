@@ -47,5 +47,11 @@
         border-radius: 8px;
         text-transform: uppercase;
         grid-column-start: 2;
+        transition: .5s all;
+
+        &:hover {
+            background-color: #ffffff;
+            color: $bgColGrey;
+        }
     }
 }

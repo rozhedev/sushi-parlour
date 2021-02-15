@@ -55,21 +55,7 @@
             text-transform: uppercase;
             letter-spacing: 1.05px;
             width: 98px;
-            transition: .5s all;
-
-            &::after {
-                content: "";
-                display: none;
-                width: 98px;
-                height: 7px;
-                background-color: $textColGreen;
-                margin-top: 5px;    
-            }
-            &:hover {
-                &:after {
-                    display: block;
-                }
-            }
+            @include linkAnimation();
         }
     }
 }

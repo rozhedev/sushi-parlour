@@ -29,5 +29,11 @@
         color: $textColGreen;
         font-size: 49px;
         text-transform: uppercase;
+        transition: .5s all;
+
+        &:hover {
+            color: $textColGrey;
+            background-color: rgba(93, 105, 66, 0.8);
+        }
     }
 }
