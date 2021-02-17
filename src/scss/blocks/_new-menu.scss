@@ -1,16 +1,14 @@
 .new-menu {
-    min-height: 865px;
-    background: url("../img/discover/bottom_bg.jpg") center/cover no-repeat;
-    background-color: $bgColGrey;
-
-    &__wrapper-bg {
-        min-height: 820px;
-        background-color: $bgColGrey;
-        transform: translateY(865px);
+    height: 865px;
+    &__parallax {
+        background: url("../../img/discover/bottom_bg.jpg") center/cover no-repeat fixed;
+        height: 865px;
     }
     &__wrapper {
+        min-height: 865px;
         background-color: rgba(62, 65, 54, 0.8);
         padding: 45px 0 120px;
+        transform: translateY(-865px);
     }
     &__title {
         font-size: 77px;

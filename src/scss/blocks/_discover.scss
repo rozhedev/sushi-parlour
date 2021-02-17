@@ -1,12 +1,13 @@
 .discover {
-    min-height: 1730px;
-    background: url("../img/discover/bg.jpg") center/cover no-repeat;
-
+    height: 1730px;
+    &__parallax {
+        background: url("../../img/discover/bg.jpg") center/cover no-repeat fixed;
+        height: 1730px;
+    }
     &__wrapper {
-        transform: translateY(238px);
+        transform: translateY(-1390px);
         height: 603px;
-        background-color: #3e4136;
-        opacity: 0.99;
+        background-color: rgba(62, 65, 54, 0.8);
         padding: 45px 0 55px;
         color: #e7e7e7;
     }

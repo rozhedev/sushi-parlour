@@ -148,6 +148,7 @@
     <!-- Discover -->
 
     <section class="discover">
+        <div class="discover__parallax"></div>
         <div class="discover__wrapper">
             <div class="container">
                 <h2 class="title discover__title">Discover</h2>
@@ -243,25 +244,44 @@
             <h2 class="title book__title">Book here</h2>
             <div class="book__content">
                 <form action="" class="book-form">
-                    <label for="" class="book-form__label">How many people?</label>
-                    <label for="" class="book-form__label">When is your date?</label>
-                    <label for="" class="book-form__label">Time</label>
+                    <input type="hidden" name="admin-email[]" value="bogdanik443@gmail.com">
+                    <input type="hidden" name="form-subject" value="Сообщение">
 
-                    <input type="number" name="num-people" id="" class="book-form__inp" placeholder="Number of people">
-                    <input type="date" name="date" id="" value="2021-02-12" class="book-form__inp">
-                    <input type="time" name="" id="" value="10:00" class="book-form__inp">
+                    <div class="book-form__row">
+                        <div>
+                            <label for="" class="book-form__label">How many people?</label>
+                            <input type="number" name="numpeople" id="" class="book-form__inp"
+                                placeholder="Number of people" data-validate-field="numpeople">
+                        </div>
+                        <div>
+                            <label for="" class="book-form__label">When is your date?</label>
+                            <input type="date" name="date" id="" class="book-form__inp" data-validate-field="date">
+                        </div>
+                        <div>
+                            <label for="" class="book-form__label">Time</label>
+                            <input type="time" name="time" id="" class="book-form__inp" data-validate-field="time">
+                        </div>
+                    </div>
 
-                    <label for="" class="book-form__label book-form--trform40">Name</label>
-                    <label for="" class="book-form__label book-form--trform40">Email</label>
-                    <label for="" class="book-form__label book-form--trform40">Phone</label>
+                    <div class="book-form__row book-form__row--mt40">
+                        <div>
+                            <label for="" class="book-form__label book-form--trform40">Name</label>
+                            <input type="text" name="username" id="" placeholder="Full name" class="book-form__inp"
+                                data-validate-field="username">
+                        </div>
+                        <div>
+                            <label for="" class="book-form__label book-form--trform40">Email</label>
+                            <input type="email" name="email" id="" placeholder="Your email" class="book-form__inp"
+                                data-validate-field="email">
+                        </div>
+                        <div>
+                            <label for="" class="book-form__label book-form--trform40">Phone</label>
+                            <input type="tel" name="tel" id="" placeholder="Your phone" class="book-form__inp"
+                                data-validate-field="tel">
+                        </div>
+                    </div>
 
-                    <input type="text" name="name" id="" placeholder="Full name"
-                        class="book-form__inp book-form--trform40">
-                    <input type="email" name="email" id="" placeholder="Your email"
-                        class="book-form__inp book-form--trform40">
-                    <input type="tel" name="phome" id="" placeholder="Your phone"
-                        class="book-form__inp book-form--trform40">
-                    <button class="book-form__btn">Submit</button>
+                    <button type="submit" class="book-form__btn">Submit</button>
                 </form>
             </div>
         </div>
@@ -270,47 +290,46 @@
     <!-- New menu -->
 
     <section class="new-menu">
-        <div class="new-menu__wrapper-bg">
-            <div class="new-menu__wrapper">
-                <div class="container">
-                    <h2 class="title new-menu__title">Discover</h2>
-                    <h3 class="subtitle new-menu__subtitle">our new menu</h3>
-                    <div class="row new-menu__content">
+        <div class="new-menu__parallax"></div>
+        <div class="new-menu__wrapper">
+            <div class="container">
+                <h2 class="title new-menu__title">Discover</h2>
+                <h3 class="subtitle new-menu__subtitle">our new menu</h3>
+                <div class="row new-menu__content">
+                    <div class="column new-menu__item">
+                        <img src="img/new_discover/1.jpg" alt="dish" class="new-menu__item-img">
+                        <div class="new-menu__inner">
+                            <div class="new-menu__item-date">Food / 16th March, 2019</div>
+                            <h4 class="new-menu__item-title">Lorem ipsum dolor sit</h4>
+                            <div class="new-menu__item-descr">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed
+                            </div>
+                            <div class="new-menu__item-btn">READ MORE</div>
+                        </div>
+                    </div>
+                    <div class="column new-menu__item">
                         <div class="column new-menu__item">
-                            <img src="img/new_discover/1.jpg" alt="dish" class="new-menu__item-img">
+                            <img src="img/new_discover/2.jpg" alt="dish" class="new-menu__item-img">
                             <div class="new-menu__inner">
-                                <div class="new-menu__item-date">Food / 16th March, 2019</div>
+                                <div class="new-menu__item-date">Spices / 16th March, 2019</div>
                                 <h4 class="new-menu__item-title">Lorem ipsum dolor sit</h4>
-                                <div class="new-menu__item-descr">Lorem ipsum dolor sit amet,
+                                <div class="new-menu__item-descr">Lorem ipsum dolor sit amet lipum
                                     consectetur adipisicing elit, sed
                                 </div>
                                 <div class="new-menu__item-btn">READ MORE</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="column new-menu__item">
                         <div class="column new-menu__item">
-                            <div class="column new-menu__item">
-                                <img src="img/new_discover/2.jpg" alt="dish" class="new-menu__item-img">
-                                <div class="new-menu__inner">
-                                    <div class="new-menu__item-date">Spices / 16th March, 2019</div>
-                                    <h4 class="new-menu__item-title">Lorem ipsum dolor sit</h4>
-                                    <div class="new-menu__item-descr">Lorem ipsum dolor sit amet lipum
-                                        consectetur adipisicing elit, sed
-                                    </div>
-                                    <div class="new-menu__item-btn">READ MORE</div>
+                            <img src="img/new_discover/3.jpg" alt="dish" class="new-menu__item-img">
+                            <div class="new-menu__inner">
+                                <div class="new-menu__item-date">Chicken Curry / 16th March, 2019</div>
+                                <h4 class="new-menu__item-title">Lorem ipsum dolor sit</h4>
+                                <div class="new-menu__item-descr">Lorem ipsum dolor sit amet lipum
+                                    consectetur adipisicing elit, sed
                                 </div>
-                            </div>
-                        </div>
-                        <div class="column new-menu__item">
-                            <div class="column new-menu__item">
-                                <img src="img/new_discover/3.jpg" alt="dish" class="new-menu__item-img">
-                                <div class="new-menu__inner">
-                                    <div class="new-menu__item-date">Chicken Curry / 16th March, 2019</div>
-                                    <h4 class="new-menu__item-title">Lorem ipsum dolor sit</h4>
-                                    <div class="new-menu__item-descr">Lorem ipsum dolor sit amet lipum
-                                        consectetur adipisicing elit, sed
-                                    </div>
-                                    <div class="new-menu__item-btn">READ MORE</div>
-                                </div>
+                                <div class="new-menu__item-btn">READ MORE</div>
                             </div>
                         </div>
                     </div>
@@ -325,7 +344,8 @@
         <div class="container">
             <div class="reviews__content">
                 <div class="reviews__decor">“</div>
-                <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+                <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
                 <div class="reviews__author">Linda Steward</div>
             </div>
             <div class="row reviews__social">
@@ -341,6 +361,8 @@
     @@include('_footer.html')
 
     <script src="https://kit.fontawesome.com/f77f4500aa.js" crossorigin="anonymous"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="js/script.min.js"></script>
 </body>
 

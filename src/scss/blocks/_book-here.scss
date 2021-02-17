@@ -13,14 +13,20 @@
 }
 
 .book-form {
-    display: grid;
-    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
-    column-gap: 200px;
     color: #ffffff;
     font-size: 17px;
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
 
-    &--trform40 {
-        transform: translateY(40px);
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+        &--mt40 {
+            margin-top: 40px;
+        }
     }
     &__label {
         font-weight: 700;
@@ -34,9 +40,11 @@
         height: 33px;
         border-radius: 8px;
         border: 2px solid #ffffff;
+        margin-top: 6px;
     }
     &__btn {
-        transform: translateY(95px);
+        display: block;
+        margin: 55px auto 0;
         width: 237px;
         height: 32px;
         color: #ffffff;
@@ -46,7 +54,6 @@
         border: 2px solid #ffffff;
         border-radius: 8px;
         text-transform: uppercase;
-        grid-column-start: 2;
         transition: .5s all;
 
         &:hover {
