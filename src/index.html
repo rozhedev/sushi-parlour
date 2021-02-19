@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi Parlour</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -342,11 +343,32 @@
 
     <section class="reviews">
         <div class="container">
-            <div class="reviews__content">
-                <div class="reviews__decor">“</div>
-                <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
-                <div class="reviews__author">Linda Steward</div>
+            <div class="reviews__slider swiper-container">
+                <div class="reviews__slider-wrapper swiper-wrapper">
+                    <div class="reviews__slider-slide swiper-slide">
+                        <div class="reviews__decor">“</div>
+                        <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+                        <div class="reviews__author">Linda Steward</div>
+                    </div>
+                    <div class="reviews__slider-slide swiper-slide">
+                        <div class="reviews__decor">“</div>
+                        <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+                        <div class="reviews__author">Bent Myung</div>
+                    </div>
+                    <div class="reviews__slider-slide swiper-slide">
+                        <div class="reviews__decor">“</div>
+                        <div class="reviews__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </div>
+                        <div class="reviews__author">Mirica Bébhionn</div>
+                    </div>
+                </div>
+                <div class="reviews__slider-nav swiper-button-prev"></div>
+                <div class="reviews__slider-nav swiper-button-next"></div>
             </div>
             <div class="row reviews__social">
                 <a href="#" class="column reviews__social-item"><i class="fab fa-facebook-f"></i></a>
@@ -361,6 +383,7 @@
     @@include('_footer.html')
 
     <script src="https://kit.fontawesome.com/f77f4500aa.js" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/just-validate.min.js"></script>
     <script src="js/script.min.js"></script>

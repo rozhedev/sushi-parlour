@@ -8,7 +8,7 @@ phoneMask.mask(inpTel);
 
 //  VALIDATE
 
-function validateForm (selector, rules) {
+function validateForm(selector, rules) {
     new window.JustValidate(selector, {
         rules: rules,
         submitHandler: function (form, values, ajax) {
@@ -19,11 +19,11 @@ function validateForm (selector, rules) {
                 method: 'POST',
                 body: formData
             })
-            .then(function(data) {
-                console.log(data);
-                console.log('Отправлено');
-                form.reset();
-            });
+                .then(function (data) {
+                    console.log(data);
+                    console.log('Отправлено');
+                    form.reset();
+                });
         }
     })
 }
@@ -49,3 +49,15 @@ validateForm('.book-form', {
         required: true,
     }
 })
+
+// SLIDER
+
+new Swiper('.reviews__slider', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    // breakpoints: {
+        
+    // },
+});

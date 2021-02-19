@@ -4,9 +4,11 @@
     text-align: center;
     padding: 50px 0;
 
-    &__content {
-        margin: 0 auto;
-        max-width: 685px;
+    &__slider {
+        width: 770px;
+        &-nav {
+            color: $textColGreen;
+        }
     }
     &__decor {
         color: $textColGreen;
@@ -16,6 +18,8 @@
     &__descr {
         color: #aac078;
         font-size: 19px;
+        max-width: 650px;
+        margin: 0 auto;
     }
     &__author {
         margin-top: 15px;
@@ -39,7 +43,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: .5s all;
+            transition: 0.5s all;
 
             &:hover {
                 background-color: #aac078;
