@@ -28,6 +28,9 @@
         min-height: 500px;
         background-color: #e7e7e7;
 
+        &-img {
+            width: 100%;
+        }
         &-date {
             color: #555555;
             font-size: 14px;
@@ -54,6 +57,15 @@
             letter-spacing: 1.05px;
             width: 98px;
             @include linkAnimation();
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .new-menu {
+        &__item {
+            width: 290px;
+            min-height: 450px;
         }
     }
 }

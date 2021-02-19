@@ -46,3 +46,26 @@
         margin-top: 33px;
     }
 }
+
+@media (max-width: 1024px) {
+    .advant {
+        min-height: 680px;
+        &__wrapper {
+            padding: 40px 30px;
+        }
+        &__img {
+            width: 50%;
+        }
+        &__descr {
+            margin-top: 30px;
+            line-height: 25px;
+        }
+        &__items-cont {
+            width: 960px;
+            padding: 70px 0;
+        }
+        &__item {
+            width: 285px;
+        }
+    }
+}

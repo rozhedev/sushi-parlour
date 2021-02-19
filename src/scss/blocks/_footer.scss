@@ -39,11 +39,10 @@
         flex-direction: column;
         &-item {
             margin-top: 5px;
-            transition: .5s all;
+            transition: 0.5s all;
             &:hover {
                 text-decoration: underline;
             }
-            
         }
         &-item--thin {
             font-weight: 400;
@@ -51,11 +50,13 @@
     }
 }
 
-// @media (max-width: 426px) {
-//     .footer {
-
-//     }
-// }
+@media (max-width: 1024px) {
+    .footer {
+        &__content {
+            width: 900px;
+        }
+    }
+}
 
 // @media (max-width: 321px) {
 //     .footer {

@@ -22,7 +22,6 @@
         margin-top: 65px;
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-        gap: 0;
     }
     &__img {
         &--order3 {
@@ -74,6 +73,49 @@
             color: #e8e8e8;
             font-family: "Good Dog Cool";
             font-size: 25px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .bring {
+        padding: 70px 0;
+        &__content {
+            margin-top: 60px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        }
+        &__wrapper {
+            width: 810px;
+            padding-top: 55px;
+        }
+        &__img {
+            &--order3 {
+                order: 2;
+            }
+            &--order5 {
+                order: 4;
+            }
+            &--order6 {
+                order: 6;
+            }
+            &--order8 {
+                order: 8;
+            }
+        }
+        &__descr {
+            &--order2 {
+                order: 3;
+            }
+            &--order4 {
+                order: 5;
+            }
+            &--order7 {
+                order: 7;
+            }
+            &--order9 {
+                order: 9;
+            }
         }
     }
 }

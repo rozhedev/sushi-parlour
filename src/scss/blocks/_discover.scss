@@ -58,3 +58,11 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .discover {
+        &__content {
+            column-gap: 75px;
+        }
+    }
+}

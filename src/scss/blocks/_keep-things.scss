@@ -26,3 +26,16 @@
         margin-top: 45px;
     }
 }
+
+@media(max-width: 1024px) {
+    .keep {
+        &--green-bg {
+            min-height: 400px;
+            padding: 80px 0px;
+        }
+        &__wrapper {
+            width: 701px;
+            margin: 0 auto;
+        }
+    }
+}
