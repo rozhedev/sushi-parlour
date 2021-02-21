@@ -47,11 +47,11 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .advant {
         min-height: 680px;
         &__wrapper {
-            padding: 40px 30px;
+            padding: 50px 25px 35px 35px;
         }
         &__img {
             width: 50%;
@@ -66,6 +66,34 @@
         }
         &__item {
             width: 285px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advant {
+        &__wrapper {
+            padding: 50px 50px 30px 30px;
+        }
+        &__content {
+            text-align: right;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 470px;
+        }
+        &__img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &__items-cont {
+            width: 720px;
+            padding: 30px 0;
+            justify-content: space-around;
+        }
+        &__item {
+            margin: 30px 0;
         }
     }
 }

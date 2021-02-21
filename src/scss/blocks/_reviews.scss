@@ -6,6 +6,8 @@
 
     &__slider {
         width: 770px;
+        min-height: 220px;
+        position: relative;
         &-nav {
             color: $textColGreen;
         }
@@ -26,6 +28,19 @@
         color: $textColGreen;
         font-family: "Good Dog Cool";
         font-size: 29px;
+    }
+    .swiper-pagination {
+        display: none;
+        width: 100px;
+        height: 20px;
+        position: absolute;
+        left: calc(50% - 50px);
+        bottom: 0;
+        &-bullet {
+            background-color: $textColGreen;
+            height: 15px;
+            width: 15px;
+        }
     }
     &__social {
         width: 330px;
@@ -48,6 +63,27 @@
             &:hover {
                 background-color: #aac078;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews {
+        padding: 40px 0;
+        &__slider {
+            width: 700px;
+            &-slide {
+                width: 650px;
+            }
+        }
+        .swiper-pagination {
+            display: block;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
+        &__descr {
+            max-width: 600px;
         }
     }
 }

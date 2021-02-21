@@ -6,7 +6,7 @@
     }
     &__wrapper {
         transform: translateY(-1390px);
-        height: 603px;
+        min-height: 603px;
         background-color: rgba(62, 65, 54, 0.8);
         padding: 45px 0 55px;
         color: #e7e7e7;
@@ -54,15 +54,31 @@
         }
         &-price {
             font-size: 21px;
-            font-family: "Good Dog"; 
+            font-family: "Good Dog";
         }
     }
 }
 
-@media(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .discover {
         &__content {
             column-gap: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .discover {
+        &__content {
+            grid-template: repeat(6, 1fr) / 1fr;
+            column-gap: 75px;
+        }
+        &__item {
+            display: flex;
+            margin: 50px auto 0;
+            &--mt40 {
+                margin-top: 0px;
+            }
         }
     }
 }

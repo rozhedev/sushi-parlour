@@ -27,7 +27,7 @@
     }
 }
 
-@media(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .keep {
         &--green-bg {
             min-height: 400px;
@@ -36,6 +36,18 @@
         &__wrapper {
             width: 701px;
             margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .keep {
+        &__wrapper {
+            max-width: 650px;
+        }
+        &--green-bg {
+            min-height: 300px;
+            padding: 50px 0;
         }
     }
 }

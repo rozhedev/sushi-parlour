@@ -61,11 +61,31 @@
     }
 }
 
-@media(max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .new-menu {
         &__item {
             width: 290px;
             min-height: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-menu {
+        min-height: 1260px;
+        &__parallax {
+            min-height: 1260px;
+        }
+        &__wrapper {
+            transform: translateY(-1260px);
+            padding: 47px 0;
+        }
+        &__content {
+            margin-top: 0px;
+            justify-content: space-around;
+        }
+        &__item {
+            margin-top: 50px;
         }
     }
 }

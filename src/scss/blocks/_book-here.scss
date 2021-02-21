@@ -52,11 +52,34 @@
         border: 2px solid #ffffff;
         border-radius: 8px;
         text-transform: uppercase;
-        transition: .5s all;
+        transition: 0.5s all;
 
         &:hover {
             background-color: #ffffff;
             color: $bgColGrey;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .book {
+        &__content {
+            margin-top: 0px;
+        }
+        padding: 40px 0 60px;
+        &-form {
+            &__row {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+                div {
+                    margin-top: 40px;
+                }
+                &--mt40 {
+                    margin-top: 0px;
+                }
+            }
         }
     }
 }
