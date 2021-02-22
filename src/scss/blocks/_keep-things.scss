@@ -47,7 +47,40 @@
         }
         &--green-bg {
             min-height: 300px;
-            padding: 50px 0;
+            padding: 40px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .keep {
+        &__wrapper {
+            max-width: 350px;
+        }
+        &__decor {
+            margin-top: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .keep {
+        &__title {
+            font-size: 34px;
+        }
+        &__descr {
+            font-size: 19px;
+        }
+        &__decor-items {
+            width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .keep {
+        &__wrapper {
+            max-width: 300px;
         }
     }
 }

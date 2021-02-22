@@ -29,7 +29,7 @@
         color: $textColGreen;
         font-size: 49px;
         text-transform: uppercase;
-        transition: .5s all;
+        transition: 0.5s all;
 
         &:hover {
             color: $textColGrey;
@@ -40,20 +40,71 @@
 
 @media screen and (max-width: 1024px) {
     .promo {
-        padding: 50px 0 242px 0;
+        padding: 50px 0 200px 0;
         &__content {
             left: 550px;
         }
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .promo {
+        min-height: 815px;
+        padding: 50px 0;
         &__content {
-            left: calc(50% - 212px);
+            top: 150px;
+            left: calc(50% - 173px);
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        &__suptitle {
+            margin-top: 100px;
+            font-size: 48px;
+        }
+        &__title {
+            font-size: 63px;
+        }
+        &__btn {
+            width: 340px;
+            height: 80px;
+            font-size: 38px;
+            margin-top: 125px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .promo {
+        &__content {
+            top: 130px;
+            left: calc(50% - 130px);
+        }
+        &__suptitle {
+            font-size: 36px;
+            margin-top: 80px;
+        }
+        &__title {
+            font-size: 47px;
+        }
+        &__btn {
+            width: 250px;
+            height: 60px;
+            font-size: 28px;
+            margin-top: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .promo {
+        min-height: 650px;
+        padding: 30px 0;
+        &__suptitle {
+            margin-top: 60px;
+        }
+        &__btn {
+            margin-top: 80px;
         }
     }
 }

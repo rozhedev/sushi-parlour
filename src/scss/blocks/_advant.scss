@@ -88,12 +88,34 @@
             right: 0;
         }
         &__items-cont {
-            width: 720px;
+            max-width: 720px;
             padding: 30px 0;
             justify-content: space-around;
         }
         &__item {
             margin: 30px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .advant {
+        &__content {
+            min-height: 560px;
+        }
+        &__img {
+            width: 85%;
+        }
+        &__items-cont {
+            max-width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .advant {
+        &__items-cont {
+            max-width: 300px;
         }
     }
 }

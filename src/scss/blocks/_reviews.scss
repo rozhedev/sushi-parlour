@@ -72,6 +72,7 @@
         padding: 40px 0;
         &__slider {
             width: 700px;
+            min-height: 240px;
             &-slide {
                 width: 650px;
             }
@@ -79,11 +80,49 @@
         .swiper-pagination {
             display: block;
         }
-        .swiper-button-prev, .swiper-button-next {
+        .swiper-button-prev,
+        .swiper-button-next {
             display: none;
         }
         &__descr {
             max-width: 600px;
+        }
+        &__author {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .reviews {
+        padding: 35px 0;
+        &__slider {
+            width: 350px;
+            min-height: 260px;
+            &-slide {
+                max-width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .reviews {
+        &__slider {
+            width: 300px;
+            min-height: 280px;
+            &-slide {
+                max-width: 300px;
+            }
+        }
+        &__social {
+            margin-top: 20px;
+            max-width: 300px;
+            flex-direction: column;
+            align-items: center;
+            a {
+                margin-top: 20px;
+            }
         }
     }
 }

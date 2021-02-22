@@ -2,26 +2,23 @@
 
 // BURGER MENU
 
-const burger = document.querySelector('.burger'),
-      nav = document.querySelector('.menu__container'),
-      links = document.querySelectorAll('.menu__container li');
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu__container'),
+        menuItems = document.querySelectorAll('.menu__item'),
+        burger = document.querySelector('.burger');
 
-function slideMenu() {
     burger.addEventListener('click', () => {
-        nav.classList.toggle('menu-active');
-        burger.classList.toggle('toggle');
-        
-        links.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `menuLinksFade .5s ease forwards ${index/7 + 0.3}s`
-            }
+        burger.classList.toggle('burger-active');
+        menu.classList.toggle('menu-active');
+    })
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            burger.classList.toggle('burger-active');
+            menu.classList.toggle('menu-active');
         })
     })
-}
-
-slideMenu();
+})
 
 //  PHONE MASK
 
@@ -84,4 +81,7 @@ new Swiper('.reviews__slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
-});
+    speed: 1000,
+})
+
+new WOW().init();
