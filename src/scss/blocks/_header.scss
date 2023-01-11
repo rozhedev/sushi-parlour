@@ -47,11 +47,12 @@
         z-index: 52;
         .menu {
             &__container {
-                display: none;
+                opacity: 0;
+                overflow: hidden;
                 position: fixed;
-                top: 68px;
+                top: 0;
                 right: -100%;
-                width: 50%;
+                width: 100%;
                 height: 100vh;
                 flex-direction: column;
                 align-items: center;
@@ -62,8 +63,9 @@
             &-active {
                 z-index: 49;
                 display: flex;
+                opacity: 1;
+                overflow: visible;
                 right: 0;
-                top: 0vh;
             }
             &__item {
                 a {
@@ -94,13 +96,13 @@
                         margin-bottom: -3px;
         
                         &:nth-child(1) {
-                            transform: translateY(3px) rotate(-45deg);
+                            transform: translateY(10%) rotate(-45deg);
                         }
                         &:nth-child(2) {
                             display: none;
                         }
                         &:nth-child(3) {
-                            transform: translateY(3px) rotate(45deg);
+                            transform: translateY(10%) rotate(45deg);
                         }
                     }
                 }
