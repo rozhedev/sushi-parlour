@@ -12,7 +12,7 @@ let path = {
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
-        js: source_folder + "/js/script.js",
+        js: [source_folder + "/js/**/*.js", "!" + source_folder + "/js/**/_*.js "],
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: source_folder + "/fonts/*.ttf",
     },
@@ -30,7 +30,7 @@ let { src, dest } = require('gulp'),
     browsersync = require('browser-sync').create(),
     fileinclude = require('gulp-file-include'),
     htmlmin = require('gulp-htmlmin'),
-    scss = require('gulp-sass'),
+    scss = require('gulp-sass')(require('dart-sass')),
     autoprefixer = require('gulp-autoprefixer'),
     group_media = require('gulp-group-css-media-queries'),
     clean_css = require('gulp-clean-css'),
@@ -54,6 +54,7 @@ function browserSync() {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
+        .pipe(htmlmin())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream())
 }
@@ -62,7 +63,7 @@ function css() {
     return src(path.src.css)
         .pipe(
             scss({
-                outputStyle: "expanded"
+                outputStyle: "compressed" /* expanded */
             })
         )
         .pipe(

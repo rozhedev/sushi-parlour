@@ -1,22 +1,18 @@
-// @@include('alert.js');
-
 // BURGER MENU
 
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu__container'),
-        menuItems = document.querySelectorAll('.menu__item'),
-        burger = document.querySelector('.burger');
+const menu = document.querySelector('.menu__container'),
+    menuItems = document.querySelectorAll('.menu__item'),
+    burger = document.querySelector('.burger');
 
-    burger.addEventListener('click', () => {
+burger.addEventListener('click', () => {
+    burger.classList.toggle('burger-active');
+    menu.classList.toggle('menu-active');
+})
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
         burger.classList.toggle('burger-active');
         menu.classList.toggle('menu-active');
-    })
-
-    menuItems.forEach(item => {
-        item.addEventListener('click', () => {
-            burger.classList.toggle('burger-active');
-            menu.classList.toggle('menu-active');
-        })
     })
 })
 
@@ -31,8 +27,7 @@ phoneMask.mask(inpTel);
 function validateForm(selector, rules) {
     new window.JustValidate(selector, {
         rules: rules,
-        submitHandler: function (form, values, ajax) {
-            console.log(form);
+        submitHandler: function (form) {
             let formData = new FormData(form);
 
             fetch('mail.php', {

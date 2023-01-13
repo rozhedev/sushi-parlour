@@ -1,18 +1,22 @@
-// Components
+// LIBS
+@import "libs/animate";
+@import "libs/swiper-bundle.scss";
 
-@import "base/nullstyle.scss";
-@import "base/fonts.scss";
-@import "base/common.scss";
+// BASE
+@import "base/nullstyle";
+@import "base/fonts";
+@import "base/vars";
+@import "base/mixins";
+@import "base/common";
 
-// Blocks
-
-@import "blocks/header";
-@import "blocks/promo";
-@import "blocks/advant";
-@import "blocks/bring";
-@import "blocks/keep-things";
-@import "blocks/discover";
-@import "blocks/book-here";
-@import "blocks/new-menu";
-@import "blocks/reviews";
-@import "blocks/footer";
+// COMPONENTS
+@import "components/header";
+@import "components/promo";
+@import "components/advant";
+@import "components/bring";
+@import "components/keep-things";
+@import "components/discover";
+@import "components/book-here";
+@import "components/new-menu";
+@import "components/reviews";
+@import "components/footer";
