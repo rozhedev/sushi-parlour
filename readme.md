@@ -4,6 +4,11 @@ It’s simple landing page for sushi bar.
 
 Consists of 8 sections and has 3 adaptive versions.
 
+Features:
+* Animation uses wow.js
+* Slider uses swiper.js
+* Phone mask & validation for all inputs
+
 ## Usage
 
 I use Gulp-based build. First of all, open project in [VS Code](https://code.visualstudio.com). After that, open terminal.
@@ -63,7 +68,10 @@ project
 │   └───js                        # All .js files
 |   |   └───...    
 |   └───scss                      # All .scss files
-|   |   └───...
+|   |   └───base                  # Basic stylisation files (vars, null, fonts etc.)
+|   |   └───components            # Components styles
+|   |   └───libs                  # Libs styles
+|   |
 |   |   *.html
 │   
 └───dist                        # Project bundle
