@@ -1,0 +1,50 @@
+[
+    {
+        "id": "numpeople",     
+        "label": "How many people?",
+        "type": "number",
+        "placeholder": "Number of people",
+        "value": "",
+        "validType": "numpeople"
+    },
+    {
+        "id": "date",     
+        "label": "When is your date?",
+        "type": "date",
+        "placeholder": "",
+        "value": "2021-02-22",
+        "validType": "date"
+    },
+    {
+        "id": "time",     
+        "label": "Time",
+        "type": "time",
+        "placeholder": "",
+        "value": "10:00",
+        "validType": "time"
+    },
+    {
+        "id": "fullname",    
+        "label": "Full name",
+        "type": "text",
+        "placeholder": "Your full name",
+        "value": "",
+        "validType": "username"
+    },
+    {
+        "id": "email",     
+        "label": "Email",
+        "type": "email",
+        "placeholder": "Your email",
+        "value": "",
+        "validType": "email"
+    },
+    {
+        "id": "tel",     
+        "label": "Phone",
+        "type": "tel",
+        "placeholder": "Your phone",
+        "value": "",
+        "validType": "tel"
+    }
+]

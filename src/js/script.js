@@ -30,12 +30,12 @@ function validateForm(selector, rules) {
         submitHandler: function (form) {
             let formData = new FormData(form);
 
-            fetch('mail.php', {
+            // * Execute file e.g mail.php
+            fetch('', {
                 method: 'POST',
                 body: formData
             })
-                .then(function (data) {
-                    console.log(data);
+                .then((data) => {
                     console.log('Отправлено');
                     form.reset();
                 });

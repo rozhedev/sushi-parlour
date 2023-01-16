@@ -1,0 +1,18 @@
+[
+    {
+        "href": "#",     
+        "iconClass": "fab fa-twitter"
+    },
+    {
+        "href": "#",     
+        "iconClass": "fab fa-instagram"
+    },
+    {
+        "href": "#",     
+        "iconClass": "fab fa-pinterest-p"
+    },
+    {
+        "href": "#",     
+        "iconClass": "fab fa-google-plus-g"
+    }
+]

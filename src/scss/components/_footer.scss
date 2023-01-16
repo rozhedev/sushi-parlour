@@ -20,15 +20,12 @@
         font-weight: 700;
         line-height: 33.33px;
         text-transform: uppercase;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         &--little {
             font-size: 21px;
-            color: #e7e7e7;
-            font-weight: 700;
         }
     }
     &__descr {
-        margin-top: 40px;
         width: 340px;
         color: #e7e7e7;
         font-size: 19px;
@@ -38,14 +35,20 @@
     &__nav {
         display: flex;
         flex-direction: column;
+
         &-item {
-            margin-top: 5px;
+            font-size: 21px;
+            color: #e7e7e7;
+            font-weight: 600;
             transition: 0.5s all;
+            &:not(:first-of-type) {
+                margin-top: 20px;
+            }
             &:hover {
                 text-decoration: underline;
             }
         }
-        &-item--thin {
+        &:last-of-type &-item{
             font-weight: 400;
         }
     }

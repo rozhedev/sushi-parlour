@@ -1,0 +1,23 @@
+[
+    {
+        "imgPath": "img/new_discover/1.jpg",
+        "imgAlt": "Food",
+        "date": "Food / 16th March, 2019",
+        "itemTitle": "Lorem ipsum dolor sit",
+        "descr": "Lorem ipsum dolor sit amet lipum consectetur adipisicing elit, sed"
+    },
+    {
+        "imgPath": "img/new_discover/2.jpg",
+        "imgAlt": "Spices",
+        "date": "Spices / 16th March, 2019",
+        "itemTitle": "Lorem ipsum dolor sit",
+        "descr": "Lorem ipsum dolor sit amet lipum consectetur adipisicing elit, sed"
+    },
+    {
+        "imgPath": "img/new_discover/3.jpg",
+        "imgAlt": "Chicken Curry",
+        "date": "Chicken Curry / 16th March, 2019",
+        "itemTitle": "Lorem ipsum dolor sit",
+        "descr": "Lorem ipsum dolor sit amet lipum consectetur adipisicing elit, sed"
+    }
+]

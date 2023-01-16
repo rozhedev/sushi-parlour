@@ -1,0 +1,17 @@
+[
+    {
+        "animType": "animate__fadeInLeft",     
+        "itemTitle": "New tastes",
+        "descr": "Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore."
+    },
+    {
+        "animType": "",
+        "itemTitle": "New dishes cooking",
+        "descr": "Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore."
+    },
+    {
+        "animType": "animate__fadeInRight",
+        "itemTitle": "New restaurant",
+        "descr": "Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore."
+    }
+]

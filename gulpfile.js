@@ -1,5 +1,5 @@
 let project_folder = "dist";
-let source_folder = "src";
+let src_folder = "src";
 
 let path = {
     build: {
@@ -10,17 +10,19 @@ let path = {
         fonts: project_folder + "/fonts",
     },
     src: {
-        html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-        css: source_folder + "/scss/style.scss",
-        js: [source_folder + "/js/**/*.js", "!" + source_folder + "/js/**/_*.js "],
-        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-        fonts: source_folder + "/fonts/*.ttf",
+        html: [src_folder + "/html/**/*.html", "!" + src_folder + "/html/**/_*.html"],
+        css: src_folder + "/scss/style.scss",
+        js:  [src_folder + "/js/**/*.js", "!" + src_folder + "/js/**/_*.js "],
+        img: src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        fonts: src_folder + "/fonts/*.ttf",
+        json: src_folder + "/json/**/*.*"
     },
     watch: {
-        html: source_folder + "/**/*.html",
-        css: source_folder + "/scss/**/*.scss",
-        js: source_folder + "/js/**/*.js",
-        img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        html: src_folder + "/**/*.html",
+        css: src_folder + "/scss/**/*.scss",
+        js: src_folder + "/js/**/*.js",
+        img: src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        json: src_folder + "/json/**/*.*"
     },
     clean: "./" + project_folder + "/"
 }
@@ -101,6 +103,11 @@ function js() {
         .pipe(browsersync.stream())
 }
 
+function json() {
+	return src(path.src.json, {})
+		.pipe(browsersync.stream());
+}
+
 function images() {
     return src(path.src.img)
         .pipe(
@@ -125,28 +132,29 @@ function fonts() {
 }
 
 gulp.task('otf2ttf', function () {
-    return src([source_folder + '/fonts/*.otf'])
+    return src([src_folder + '/fonts/*.otf'])
         .pipe(fonter({
             formats: ['ttf']
         }))
-        .pipe(dest(source_folder + '/fonts/'))
+        .pipe(dest(src_folder + '/fonts/'))
 })
 
 function watchFiles() {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
+    gulp.watch([path.watch.json], json);
     gulp.watch([path.watch.img], images);
 }
 
-let build = gulp.series(gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(gulp.parallel(html, css, js, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;
 exports.images = images;
-exports.js = js;
-exports.css = css;
 exports.html = html;
+exports.css = css;
+exports.js = js;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;

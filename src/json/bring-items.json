@@ -1,0 +1,56 @@
+[
+    {
+        "imgOrder": "",
+        "descrOrder": "",
+        "imgPath": "img/plate/1.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "California Sushi",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    },
+    {
+        "imgOrder": "bring__img--order1",
+        "descrOrder": "bring__img--order1",
+        "imgPath": "img/plate/2.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "Traditional Wok",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    },
+    {
+        "imgOrder": "bring__img--order3",
+        "descrOrder": "bring__descr--order2",
+        "imgPath": "img/plate/3.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "Poké Bowl",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    },
+    {
+        "imgOrder": "bring__img--order5",
+        "descrOrder": "bring__descr--order4",
+        "imgPath": "img/plate/4.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "Fresh Salmon",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    },
+    {
+        "imgOrder": "bring__img--order6",
+        "descrOrder": "bring__descr--order7",
+        "imgPath": "img/plate/5.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "Avocado Sushi",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    },
+    {
+        "imgOrder": "bring__img--order8",
+        "descrOrder": "bring__descr--order9",
+        "imgPath": "img/plate/6.jpg",
+        "imgAlt": "dish",
+        "itemTitle": "King Sushi",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do",
+        "price": "$14.95"
+    }
+]

@@ -62,17 +62,21 @@ project
 |
 └───src
 │   └───fonts                     # Fonts in .ttf, .otf format
-|
+|   │   
+|   └───html                      # All .html files
+|   |   └───chunks                # Layout of big parts of pages (e.g. _footer.html)
+|   |   └───components            # Components layout (e.g. _news-card.html)
+|   |
 │   └───img                       # All images
 |   |   └───...    
+|   |
 │   └───js                        # All .js files
 |   |   └───...    
-|   └───scss                      # All .scss files
-|   |   └───base                  # Basic stylisation files (vars, null, fonts etc.)
-|   |   └───components            # Components styles
-|   |   └───libs                  # Libs styles
 |   |
-|   |   *.html
+|   └───scss                      # All .scss files
+|       └───base                  # Basic stylisation files (vars, null, fonts etc.)
+|       └───components            # Components styles
+|       └───libs                  # Libs styles
 │   
 └───dist                        # Project bundle
 |   └───css

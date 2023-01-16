@@ -12,20 +12,23 @@
 }
 
 .book-form {
-    color: #ffffff;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-auto-flow: 1fr / repeat(3, 1fr);
     font-size: 17px;
-    &__row {
-        display: flex;
-        justify-content: space-between;
+    color: #ffffff;
 
-        div {
-            display: flex;
-            flex-direction: column;
+    .form-item {
+        justify-self: center;
+        label {
+            display: block;
         }
-        &--mt40 {
-            margin-top: 40px;
+
+        &:nth-of-type(n + 4) {
+            margin-top: 20px;
         }
     }
+
     &__label {
         font-weight: 700;
     }
@@ -38,13 +41,15 @@
         height: 33px;
         border-radius: 8px;
         border: 2px solid #ffffff;
-        margin-top: 6px;
+        margin-top: 10px;
     }
     &__btn {
-        display: block;
-        margin: 55px auto 0;
+        // * Align grid item
+        grid-column: span 3 / span 3;
+        justify-self: center;
         width: 237px;
         height: 32px;
+        margin-top: 50px;
         color: #ffffff;
         font-size: 17px;
         font-weight: 700;

@@ -1,0 +1,44 @@
+[
+    {
+        "imgPath": "img/discover/1.png",
+        "imgAlt": "Nigiri",
+        "itemTitle": "Nigiri with our best fish",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    },
+    {
+        "imgPath": "img/discover/2.png",
+        "imgAlt": "Ramen",
+        "itemTitle": "Ramen is part of our cuisine",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    },
+    {
+        "imgPath": "img/discover/3.png",
+        "imgAlt": "Sushi complete variety",
+        "itemTitle": "Sushi complete variety",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    },
+    {
+        "imgPath": "img/discover/4.png",
+        "imgAlt": "Sashimi",
+        "itemTitle": "Sashimi for fish lovers",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    },
+    {
+        "imgPath": "img/discover/5.png",
+        "imgAlt": "Uramaki",
+        "itemTitle": "Uramaki made with the best ingredients",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    },
+    {
+        "imgPath": "img/discover/6.png",
+        "imgAlt": "Sushi rice",
+        "itemTitle": "Sushi rice made the traditional way",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis",
+        "price": "14.95$"
+    }
+]

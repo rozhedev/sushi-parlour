@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html', {
+"title": "Sushi Parlour",
+"cssPath": "css/style.min.css"
+})
+
+<body>
+    <section class="promo" id="up">
+        @@include('chunks/_header.html')
+        <div class="container">
+            <div class="promo__content">
+                <a href="#"><img src="img/promo/logo.svg" alt="logo" class="logo"></a>
+                <h2 class="promo__suptitle">NEW OPENING</h2>
+                <h1 class="promo__title">23RD SEPT </h1>
+                <button class="promo__btn">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+
+    <section class="advant">
+        <div class="advant__content">
+            <div class="advant__wrapper animate__animated animate__fadeIn wow">
+                <div class="advant__title">What do we actually cook?</div>
+                <div class="advant__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod
+                    tempor incididunt ut labore et dolorem magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+            </div>
+            <img src="../img/promo/right_dish.png" alt="right_dish" class="advant__img">
+        </div>
+        <div class="advant__items">
+            <div class="container">
+                <div class="row advant__items-cont">
+                    @@loop("components/_advant-item.html", "../json/advant-items.json")
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- We bring tradition -->
+
+    <section class="bring">
+        <div class="container">
+            <div class="bring__wrapper">
+                <h3 class="title bring__title">We bring tradition</h3>
+                <h4 class="subtitle bring__subtitle">to your plate</h4>
+                <div class="bring__content">
+                    @@loop("components/_bring-item.html", "../json/bring-items.json")
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keep things -->
+
+    <section class="keep">
+        <div class="keep--green-bg">
+            <div class="container">
+                <div class="keep__wrapper animate__animated animate__fadeInUp wow">
+                    <div class="keep__title">We like to keep things simple</div>
+                    <div class="keep__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis </div>
+                    <div class="keep__decor">
+                        <img src="img/decor/keep-brush.png" alt="subtitle_brush" class="keep__decor-items">
+                        <img src="img/decor/keep-brush.png" alt="subtitle_brush" class="keep__decor-items">
+                        <img src="img/decor/keep-brush.png" alt="subtitle_brush" class="keep__decor-items">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discover -->
+
+    <section class="discover">
+        <div class="discover__parallax"></div>
+        <div class="discover__wrapper">
+            <div class="container">
+                <h2 class="title discover__title discover-title">Discover</h2>
+                <h3 class="subtitle discover__subtitle discover-subtitle">our new menu</h3>
+                <div class="discover__content">
+                    @@loop("components/_discover-item.html", "../json/discover-items.json")
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book here -->
+
+    <section class="book">
+        <div class="container">
+            <h2 class="title book__title discover-title">Book here</h2>
+            <div class="book__content">
+                <form action="" class="book-form">
+                    <input type="hidden" name="admin-email[]" value="bogdanik443@gmail.com">
+                    <input type="hidden" name="form-subject" value="Сообщение">
+
+                    @@loop("components/_form-input.html", "../json/form-inputs.json")
+
+                    <button type="submit" class="book-form__btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- New menu -->
+
+    <section class="new-menu">
+        <div class="new-menu__parallax"></div>
+        <div class="new-menu__wrapper">
+            <div class="container">
+                <h2 class="title new-menu__title discover-title">Discover</h2>
+                <h3 class="subtitle new-menu__subtitle discover-subtitle">our new menu</h3>
+                <div class="row new-menu__content">
+                    @@loop("components/_menu-item.html", "../json/menu-items.json")
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__slider swiper-container">
+                <div class="reviews__slider-wrapper swiper-wrapper">
+                    @@loop("components/_slider-item.html", "../json/slider-items.json")
+                </div>
+                <div class="reviews__slider-nav swiper-button-prev"></div>
+                <div class="reviews__slider-nav swiper-button-next"></div>
+                <div class="reviews__bullets swiper-pagination"></div>
+            </div>
+            <div class="row reviews__social">
+                @@loop("components/_social-item.html", "../json/social-items.json")
+            </div>
+        </div>
+    </section>
+
+    @@include('chunks/_footer.html')
+    @@include('chunks/_js.html')
+</body>
+
+</html>
