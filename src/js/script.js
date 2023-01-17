@@ -1,4 +1,4 @@
-// BURGER MENU
+// * BURGER MENU
 
 const menu = document.querySelector('.menu__container'),
     menuItems = document.querySelectorAll('.menu__item'),
@@ -16,13 +16,13 @@ menuItems.forEach(item => {
     })
 })
 
-//  PHONE MASK
+// * PHONE MASK
 
 let inpTel = document.querySelectorAll('input[type="tel"]');
 let phoneMask = new Inputmask('+1 (999) 999-99-99');
 phoneMask.mask(inpTel);
 
-//  VALIDATE
+// * VALIDATE
 
 function validateForm(selector, rules) {
     new window.JustValidate(selector, {
@@ -65,7 +65,7 @@ validateForm('.book-form', {
     }
 })
 
-// SLIDER
+// * SLIDER
 
 new Swiper('.reviews__slider', {
     navigation: {
@@ -78,5 +78,17 @@ new Swiper('.reviews__slider', {
     },
     speed: 1000,
 })
+
+// * PRELOADER
+
+window.onload = function () {
+    document.body.classList.add("_hide");
+    document.body.style.overflow = 'hidden';
+    this.setTimeout(() => {
+        document.body.classList.add("_loaded");
+        document.body.classList.remove("_hide");
+        document.body.style.overflow = 'auto';
+    }, 500);
+}
 
 new WOW().init();
