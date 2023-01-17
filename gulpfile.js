@@ -75,7 +75,7 @@ function css() {
             autoprefixer({
                 overrideBrowserslist: ["last 5 versions"],
                 cascade: true,
-                grid: true
+                grid: false
             })
         )
         .pipe(clean_css())

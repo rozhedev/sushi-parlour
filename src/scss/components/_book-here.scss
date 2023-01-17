@@ -14,7 +14,6 @@
 .book-form {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-    grid-auto-flow: 1fr / repeat(3, 1fr);
     font-size: 17px;
     color: #ffffff;
 
@@ -68,36 +67,39 @@
 
 @media screen and (max-width: 768px) {
     .book {
-        &__content {
-            margin-top: 0px;
-        }
+        padding: 40px 0 60px;
         &__title {
             font-size: 63px;
         }
-        padding: 40px 0 60px;
-        &-form {
-            &__row {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: space-between;
-                div {
-                    margin-top: 40px;
-                }
-                &--mt40 {
-                    margin-top: 0px;
-                }
+    }
+    .book-form {
+        // * Grid not working on adaptive
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-item {
+            width: 50%;
+            .book-form__inp {
+                width: 100%;
             }
-            &__btn {
-                margin-top: 45px;
+            &:not(:first-of-type) {
+                margin-top: 40px;
             }
+            &:nth-of-type(n + 4) {
+                margin-top: 40px;
+            }
+        }
+        &__btn {
+            margin-top: 40px;
         }
     }
 }
 
 @media screen and (max-width: 426px) {
     .book {
-        &-form__row div {
+        .form-item {
+            width: 80%;
             margin-top: 35px;
         }
     }

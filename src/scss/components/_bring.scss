@@ -21,58 +21,44 @@
     &__content {
         margin-top: 65px;
         display: grid;
-        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-auto-flow: 1fr / repeat(2, 1fr);
     }
-    &__img {
-        &--order3 {
-            order: 3;
+    .bring-item {
+        display: flex;
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+            flex-direction: row-reverse;
         }
-        &--order5 {
-            order: 5;
+        &__img {
+            width: 270px;
+            height: 275px;
+            aspect-ratio: 1 / 1;
         }
-        &--order6 {
-            order: 6;
-        }
-        &--order8 {
-            order: 8;
-        }
-    }
-    &__descr {
-        width: 270px;
-        height: 275px;
-        background-color: $bgColGreen;
-        opacity: 0.8;
-        text-align: center;
-        padding: 65px 60px;
+        &__content {
+            width: 270px;
+            height: 275px;
+            background-color: $bgColGreen;
+            opacity: 0.8;
+            text-align: center;
+            padding: 65px 60px;
 
-        &--order2 {
-            order: 2;
-        }
-        &--order4 {
-            order: 4;
-        }
-        &--order7 {
-            order: 7;
-        }
-        &--order9 {
-            order: 9;
-        }
-
-        &-title {
-            color: $textColGreen;
-            font-family: "Good Dog Cool";
-            font-size: 29px;
-        }
-        &-text {
-            color: #e8e8e8;
-            font-family: "Myriad Pro";
-            font-size: 17px;
-            margin: 20px 0;
-        }
-        &-price {
-            color: #e8e8e8;
-            font-family: "Good Dog Cool";
-            font-size: 25px;
+            &-title {
+                color: $textColGreen;
+                font-family: 'Good Dog Cool';
+                font-size: 29px;
+            }
+            &-text {
+                color: #e8e8e8;
+                font-family: 'Myriad Pro';
+                font-size: 17px;
+                margin: 20px 0;
+            }
+            &-price {
+                color: #e8e8e8;
+                font-family: 'Good Dog Cool';
+                font-size: 25px;
+            }
         }
     }
 }
@@ -80,41 +66,46 @@
 @media screen and (max-width: 1024px) {
     .bring {
         padding: 70px 0;
-        &__content {
-            margin-top: 60px;
-            display: grid;
-            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-        }
         &__wrapper {
             width: 810px;
             padding-top: 55px;
         }
-        &__img {
-            &--order3 {
-                order: 2;
-            }
-            &--order5 {
-                order: 4;
-            }
-            &--order6 {
-                order: 6;
-            }
-            &--order8 {
-                order: 8;
-            }
+        &__content {
+            margin-top: 60px;
+            display: grid;
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+            grid-auto-flow: 1fr / repeat(2, 1fr);
         }
-        &__descr {
-            &--order2 {
-                order: 3;
+        .bring-item {
+            display: flex;
+            flex-direction: column;
+            &:nth-of-type(2n) {
+                flex-direction: column-reverse;
             }
-            &--order4 {
-                order: 5;
+            &:nth-of-type(3) {
+                flex-direction: column;
             }
-            &--order7 {
-                order: 7;
+            &:nth-of-type(4) {
+                flex-direction: column-reverse;
             }
-            &--order9 {
-                order: 9;
+            &__img {
+                width: 405px;
+                height: 405px;
+                aspect-ratio: 1 / 1;
+            }
+            &__content {
+                width: 405px;
+                height: 405px;
+                &-title {
+                    font-size: calc(29px * 1.66);
+                }
+                &-text {
+                    font-size: calc(17px * 1.66);
+                    margin: calc(20px * 1.66) 0;
+                }
+                &-price {
+                    font-size: calc(25px * 1.66);
+                }
             }
         }
     }
@@ -134,41 +125,30 @@
             margin: 50px auto 0;
             width: 75%;
             display: grid;
-            grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+            grid-template: repeat(3, 1fr) / repeat(2, 1fr);
         }
         &__wrapper {
             width: 100%;
             padding-top: 35px;
         }
-        &__img {
-            &--order1 {
-                order: 2;
+        .bring-item {
+            &__img {
+                width: initial;
+                height: initial;
             }
-            &--order2 {
-                order: 3;
-            }
-            &--order3 {
-                order: 4;
-            }
-            &--order5 {
-                order: 7;
-            }
-            &--order8 {
-                order: 11;
-            }
-        }
-        &__descr {
-            &--order1 {
-                order: 4;
-            }
-            &--order2 {
-                order: 5;
-            }
-            &--order4 {
-                order: 6;
-            }
-            &--order9 {
-                order: 10;
+            &__content {
+                width: initial;
+                height: initial;
+                &-title {
+                    font-size: 29px;
+                }
+                &-text {
+                    font-size: 17px;
+                    margin: 20px 0;
+                }
+                &-price {
+                    font-size: 25px;
+                }
             }
         }
     }
@@ -178,42 +158,32 @@
     .bring {
         padding: 50px 0;
         &__title {
-            font-size: 36px;
+            font-size: 30px;
             line-height: 1.4;
         }
         &__subtitle {
-            font-size: 31px;
+            font-size: 26px;
             line-height: 1.4;
         }
         &__content {
             margin: 40px auto 0;
-            grid-template: repeat(12, 1fr) / 1fr;
+            grid-template: repeat(6, 1fr) / 1fr;
             width: 270px;
         }
         &__wrapper {
             width: 90%;
             padding-top: 30px;
         }
-        &__img {
-            &--order1, &--order2, &--order3, &--order5, &--order8 {
-                order: 0;
+        .bring-item {
+            &:nth-of-type(2n) {
+                flex-direction: column;
             }
-        }
-        &__descr {
-            &--order1, &--order2, &--order4, &--order9 {
-                order: 0;
+            &:nth-of-type(3) {
+                flex-direction: column;
             }
-        }
-    }
-}
-
-@media screen and (max-width: 426px) {
-    .bring {
-        &__title {
-            font-size: 30px;
-        }
-        &__subtitle {
-            font-size: 26px;
+            &:nth-of-type(4) {
+                flex-direction: column;
+            }
         }
     }
 }

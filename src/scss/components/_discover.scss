@@ -23,6 +23,7 @@
     &__content {
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-auto-flow: 1fr / repeat(2, 1fr);
         column-gap: 200px;
         margin-top: 40px;
     }
@@ -61,8 +62,11 @@
 @media screen and (max-width: 1024px) {
     .discover {
         &__content {
-            column-gap: 75px;
+            column-gap: 70px;
         }
+    }
+    .discover__item-content {
+        max-width: 350px;
     }
 }
 
@@ -78,9 +82,6 @@
         &__item {
             display: flex;
             margin: 50px auto 0;
-            &--mt40 {
-                margin-top: 0px;
-            }
         }
     }
 }

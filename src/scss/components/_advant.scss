@@ -69,7 +69,7 @@
     .advant {
         min-height: 680px;
         &__wrapper {
-            padding: 50px 25px 35px 35px;
+            padding: 60px 30px 30px 30px;
         }
         &__img {
             width: 50%;
@@ -91,19 +91,17 @@
 @media screen and (max-width: 768px) {
     .advant {
         &__wrapper {
-            padding: 50px 50px 30px 30px;
+            padding: 50px;
         }
         &__content {
-            text-align: right;
-            position: relative;
             display: flex;
             flex-direction: column;
-            min-height: 470px;
+            align-items: flex-end;
+            min-height: 480px;
+            text-align: justify;
         }
         &__img {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+           width: 60%;
         }
         &__items-cont {
             max-width: 720px;
